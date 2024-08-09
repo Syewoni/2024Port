@@ -1,1 +1,111 @@
 @charset "uft-8";
+
+/* 컬러 설정 */
+html {
+    --bg-color:#EBDFCF;
+    --main-color: #3D3D3D;
+    --pt-color: #DD6013;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: "PP Neue Montreal", "NanumSquare", "san-serif";
+    color: var(--main-color);
+    word-break: keep-all;
+}
+/* 전체 레이아웃 */
+main .box {
+    width: 80%;
+    margin: 0 auto;
+}
+/* 헤더메뉴 */
+#topList {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+#topList .topMenu {
+    display: flex;
+    gap:20px;
+}
+#topList .topMenu li a {
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: 400;
+}
+/* 첫화면 */
+#main-page {
+    height: 100vh;
+}
+#main-page .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+#main-page .inner .point {
+    color: var(--pt-color);
+}
+#main-page .inner .font-big {
+    font-size: 90px;
+    font-weight: 700;
+}
+#main-page .inner > .desc {
+    font-size: 20px;
+}
+#main-page .inner h1 {
+    margin-top: 15px;
+}
+#main-page .inner h2 {
+    margin-bottom: 50px;
+}
+#main-page .desc-box .desc {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+}
+/* 스킬관련 */
+#skill-page {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    width: 100%;
+    padding: 150px 0;
+}
+#skill-page .inner {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+#skill-page .sec {
+    width: 50%;
+}
+#skill-page .left-box h3 {
+    font-size: 60px;
+    font-weight: 700;
+}
+#skill-page .right-box .list-box {
+    border-bottom: 1px solid var(--bg-color);
+    padding: 30px 0;
+}
+#skill-page .right-box .list-box:hover .skill-name {
+    color: var(--pt-color);
+}
+#skill-page .right-box li {
+    line-height: 1.5;
+}
+#skill-page .right-box li:last-child {
+    opacity: .8;
+    font-size: 18px;
+}
+#skill-page .skill-name {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: .5s;
+}
