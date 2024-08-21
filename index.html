@@ -10,154 +10,276 @@
   <!-- open graphy -->
   <meta property="og:title" content="SHIN YEWON PORTFOLIO" />
   <meta property="og:description" content="신예원의 포트폴리오입니다." />
-  <meta property="og:image" content="./favicon/open.png" />
+  <meta property="og:image" content="" />
   <meta property="og:url" content="https://syewoni.github.io" />
 
-  <!-- favicon : 수정예정 -->
-  <link rel="shortcut icon" href="" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon/FAVICON.png" />
 
   <title>신예원 포트폴리오</title>
   <!-- mini reset -->
-  <link rel="stylesheet" href="./common/minireset.css">
+  <link rel="stylesheet" href="./common/minireset.css" />
   <!-- 웹폰트 적용 -->
-  <link rel="stylesheet" href="./2024 Port/Mainpage/CSS/font.css">
+  <link rel="stylesheet" href="./2024 Port/Mainpage/CSS/font.css" />
   <!-- style.css -->
-  <link rel="stylesheet" href="./2024 Port/Mainpage/CSS/style.css">
-  <!-- script.js -->
-  <link rel="stylesheet" href="./2024 Port/Mainpage/CSS/script.js">
+  <link rel="stylesheet" href="./2024 Port/Mainpage/CSS/style.css" />
   <!-- aos.css -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <!-- aos.js -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- jQuery -->
+  <script src="./common/jquery-3.6.0.min.js"></script>
+  <!-- script.js -->
+  <script src="./2024 Port/Mainpage/CSS/script.js"></script>
 </head>
 
 <body>
   <header>
-    <!--상단고정메뉴 -->
-    <div id="topList">
-      <ul class="topMenu">
-        <li><a href="#main-page">About</a></li> 
-        <li><a href="#skill-page">Skills</a></li> 
-        <li><a href="#project-page">Project</a></li>
-        <li><a href="#contact-page">Contact</a></li>
+    <nav>
+      <ul id="gnb">
+        <li class="active"><a href="#about" data-cursor="menu">about,</a></li>
+        <li><a href="#project" data-cursor="menu">project,</a></li>
+        <li><a href="#contact" data-cursor="menu">contact</a></li>
       </ul>
-      <div class="rt-contact">
-        <a href="#none">Contact Me</a>        
-      </div>
+    </nav>
+    <h2>web<span>publisher</span></h2>
+    <div class="header_txt">
+      <p>positive - deligence - passion</p>
+      <!-- 타이핑 애니메이션 -->
+      <p class="text"></p>
+      <!-- <p></p> -->
+    </div>
+    <h2>shin<span>ye won</span></h2>
+    <div class="scroll">
+      <img src="./2024 Port/Mainpage/images/button.svg" alt="icon" />
+      <p>
+        <span>scroll down to</span>
+        <span>view my portfolio</span>
+      </p>
     </div>
   </header>
   <main>
-    <!-- 첫화면 -->
-    <section id="main-page" class="box">
-      <div class="inner">
-        <span class="desc">도전하는 퍼블리셔가 되고싶은 저는</span>
-      <h1 class="font-big"><span class="point">긍정적인 에너지</span>를 가진</h1>
-      <h2 class="font-big">퍼블리셔 신예원 입니다</h2>
-      <div class="desc-box">
-        <p class="desc">내가 생각한대로 브라우저 상에 구현해내는 일은 굉장히 흥미롭다고 생각합니다.</p>
-        <p class="desc">저는 경험이 중요하다고 생각하며 도전에 두려워하지 않고, 다양한 상황에 부딪히고 경험해보며 발전하는 퍼블리셔가 되고싶습니다.</p>
-      </div>
-      </div>
-    </section>
-    <!-- 스킬관련 -->
-    <section id="skill-page" class="box">
-      <div class="inner">
-        <div class="left-box sec">
-          <h3>What I can do</h3>
+    <section id="about" data-aos="fade-up" data-aos-duration="1000">
+      <div class="about_info">
+        <div class="txt">
+          <span>01/</span>
+          <span>about</span>
         </div>
-        <div class="right-box sec">
-          <ul id="box1" class="list-box">
-            <li class="icon"></li>
-            <li class="skill-name">HTML5 & CSS3</li>
-            <li>사이트 구축 및 디자인이 가능하며, 웹 표준 및 웹 접근성을 고려한 시맨틱 태그의 사용이 가능합니다. 또한, flex, grid, position 등을 이용한 레이아웃 구현 및 미디어 쿼리를 이용한 반응형 웹 제작이 가능하며, CSS를 사용한 스타일 적용 및 애니메이션 적용이 가능합니다.</li>
-          </ul>
-          <ul id="box2" class="list-box">
-            <li class="icon"></li>
-            <li class="skill-name">JavaScript(ES6)</li>
-            <li>자바스크립트의 기본 문법 이해 및 이벤트 메소드 구현이 가능하며 jQuery 라이브러리를 사용한 움직임 구현이 가능합니다.</li>
-          </ul>
-          <ul id="box3" class="list-box">
-            <li class="icon"></li>
-            <li class="skill-name">Github</li>
-            <li>git bash 사용 및 Github를 이용한 작업물 저장, 버전 관리 및 업데이트가 가능합니다.</li>
-          </ul>
-          <ul id="box4" class="list-box">
-            <li class="icon"></li>
-            <li class="skill-name">Adobe XD & Zeplin</li>
-            <li>Adobe XD를 활용한 프로토타입 제작과 앱 스플래시 화면 디자인이 가능합니다.</li>
-          </ul>
-          <ul id="box5" class="list-box">
-            <li class="icon"></li>
-            <li class="skill-name">Photoshop & Illustrator</li>
-            <li>이미지 편집 및 디자인이 가능하며, Gif 파일 제작이 가능합니다.</li>
-          </ul>
+        <p>
+          <span>HTML과 CSS를 이용하여 브라우저 상에 구현하는 일은 재미있고
+            뿌듯함도 함께 얻을 수 있어</span>
+          <span>웹 퍼블리셔의 길을 선택하여 새롭게 도전하게 되었습니다. 저는
+            경험이 중요하다고 생각합니다.</span>
+          <span>도전에 두려워하지 않고 다양한 상황에 부딪히고 경험해보며 배워가며
+            발전하는 퍼블리셔가 되고싶습니다</span>
+        </p>
+      </div>
+      <div class="about_can">
+        <div id="about_box1" class="txt">
+          <h3>i can<span>do</span></h3>
         </div>
-      </div>
-    </section>
-    <!-- 작업물 리스트 -->
-    <section id="project-page" class="box">
-      <div class="left-box">
-        <p>Project</p>
-      </div>
-      <div class="right-box">
-        <!-- 작업물 1 -->
-        <ul class="prj-list">
-          <li>
-            <div class="inner">
-              <h4 class="title">NEER'G</h4>
-              <p class="desc">Web Publishing</p>
-            </div>
+        <ul id="about_wrapper">
+          <li data-aos="fade-left" data-aos-duration="2000" id="html" class="skill">
+            <h4>html5 & css3</h4>
+            <p>
+              <span>사이트 구축 및 디자인이 가능하며 웹표준&웹 접근성을 고려한
+                시맨틱 태그의 사용이</span>
+              <span>가능합니다. 또한, flex, grid, position을 이용한 레이아웃 구현
+                및
+              </span>
+              <span>미디어쿼리를 이용한 반응형 웹 제작이 가능하며, CSS를 통한
+                스타일 및 애니메이션 적용이 가능합니다.</span>
+            </p>
           </li>
-        </ul>
-        <!-- 작업물 2 -->
-        <ul class="prj-list">
-          <li>
-            <div class="inner">
-              <h4 class="title">네오캠코리아</h4>
-              <p class="desc">Web Publishing</p>
-            </div>
+          <li data-aos="fade-left" data-aos-duration="1000" id="js" class="skill">
+            <h4>javascript<br />(ES6)</h4>
+            <p>
+              <span>자바스크립트 기본 문법 이해 및 이벤트 메소드 구현이
+                가능하며</span>
+              <span>jQuery, Ajax, JSON 및 슬라이드 등 움직임 구현이
+                가능합니다.</span>
+              <span>React는 공부중에 있습니다.</span>
+            </p>
           </li>
-        </ul>
-        <!-- 작업물 3 -->
-        <ul class="prj-list">
-          <li>
-            <div class="inner">
-              <h4 class="title">하얀산업</h4>
-              <p class="desc">Web Publishing</p>
-            </div>
+          <li data-aos="fade-left" data-aos-duration="1000" id="xd" class="skill">
+            <h4>adobe xd <span>& zeplin</span></h4>
+            <p>
+              <span>xd를 활용한 프로토타입 제작과 앱 스플래시 화면 디자인이
+                가능합니다.</span>
+            </p>
           </li>
-        </ul>
-        <!-- 작업물 4 -->
-        <ul class="prj-list">
-          <li>
-            <div class="inner">
-              <h4 class="title">세이프웨어</h4>
-              <p class="desc">Web Publishing</p>
-            </div>
+          <li data-aos="fade-left" data-aos-duration="1000" id="photo" class="skill">
+            <h4>
+              <span>photoshop</span>
+              <span>& illustrator</span>
+            </h4>
+            <p>
+              <span>이미지 편집 및 디자인이 가능하며, gif 파일 제작을 할 수
+                있습니다.</span>
+            </p>
           </li>
-        </ul>
-        <!-- 작업물 5 -->
-        <ul class="prj-list">
-          <li>
-            <div class="inner">
-              <h4 class="title">Comming Soon</h4>
-              <p class="desc">새 프로젝트 준비중입니다.</p>
-            </div>
+          <li data-aos="fade-left" data-aos-duration="1000" id="git" class="skill">
+            <h4>github</h4>
+            <p>
+              <span>git bash사용 및 깃허브를 이용한 작업물 저장, 버전 관리 및
+                업데이트가 가능합니다.</span>
+            </p>
           </li>
         </ul>
       </div>
     </section>
-    <!-- Contact -->
-    <section id="contact-page" class="box">
-      <div class="contact">
-        <h4><a href="#none">Contact to Me</a></h4>
+
+    <section id="project" data-aos="fade-up" data-aos-duration="1000">
+      <div class="sub_title">
+        <h2 class="txt">
+          <span>02/</span>
+          <span>project</span>
+        </h2>
+        <h2 class="txt">web publishing</h2>
       </div>
+      <ul id="project_list">
+        <li class="contents">
+          <a href="./2024 Port/Subpage/neerg/index.html">
+            <div class="intro">
+              <span>01.</span>
+              <p>온라인 웹사이트 리뉴얼 및 반응형 웹사이트 제작</p>
+            </div>
+            <div class="contents_item">
+              <p>NEER G</p>
+              <div class="tag">
+                <span>#반응형</span>
+                <span>#이미지 슬라이드</span>
+                <span>#홈페이지 리뉴얼</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="contents">
+          <a href="./2024 Port/Subpage/Neochem/index.html">
+            <div class="intro">
+              <span>02.</span>
+              <p>온라인 웹사이트 리뉴얼 및 반응형 웹사이트 제작</p>
+            </div>
+            <div class="contents_item">
+              <p>Neochem Korea</p>
+              <div class="tag">
+                <span>#반응형</span>
+                <span>#Typing Event</span>
+                <span>#홈페이지 리뉴얼</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="contents">
+          <a href="./2024 Port/Subpage/세이프웨어/index.html">
+            <div class="intro">
+              <span>03.</span>
+              <p>온라인 웹사이트 리뉴얼 및 반응형 웹사이트 제작</p>
+            </div>
+            <div class="contents_item">
+              <p>Safeware</p>
+              <div class="tag">
+                <span>#반응형</span>
+                <span>#JavaScript</span>
+                <span>#홈페이지 리뉴얼</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="contents">
+          <a href="./2024 Port/Subpage/맥딜리버리/index.html">
+            <div class="intro">
+              <span>04.</span>
+              <p>맥 딜리버리 모바일 앱 리디자인</p>
+            </div>
+            <div class="contents_item">
+              <p>MC Delivery</p>
+              <div class="tag">
+                <span>#팀작업</span>
+                <span>#UI/UX</span>
+                <span>#프로토타입</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li id="lx" class="contents">
+          <a href="#none">
+            <div class="intro">
+              <span>05.</span>
+              <p>준비중입니다.</p>
+            </div>
+            <div class="contents_item">
+              <p>Comming Soon</p>
+              <div class="tag">
+                <span>#준비중</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
     </section>
   </main>
-  <footer>
-    <p>© 2024 Design & Published by Yewon Shin. All Rights Reserved.</p>
+  <footer id="contact">
+    <div class="contact_wrapper">
+      <div class="sub_title">
+        <h2 class="txt">
+          <span>03/</span>
+          <span>contact</span>
+        </h2>
+      </div>
+
+      <div class="contact_info">
+        <h5>profile</h5>
+        <ul id="profile">
+          <li>name <span>신예원</span></li>
+          <li>birth <span>1998.01.06</span></li>
+        </ul>
+
+        <h5>experience</h5>
+        <ul id="ex">
+          <li>
+            2018.2
+            <span>오산대학교 아동보육과 졸업</span>
+          </li>
+          <li>2018.03 - 2021.02 <span>연꽃어린이집 근무</span></li>
+          <li>2021.03 - 2022.02 <span>시립세교호반어린이집 근무</span></li>
+          <li>2023.05 - 2024.05 <span>주식회사 비즈메카씨앤씨 근무</span></li>
+        </ul>
+      </div>
+
+      <div class="contact">
+        <p>
+          끝까지 확인해주셔서 감사합니다. 성장하는 퍼블리셔 신예원이
+          되겠습니다.
+        </p>
+        <p class="txt">
+          <a href="#" data-cursor="email" data-name="send mail">won980@naver.com</a>
+        </p>
+      </div>
+
+      <div class="contact_bottom">
+        <a href="https://github.com/Syewoni" target="_blank"><span>github</span> 바로가기</a>
+        <p>© SHIN YE WON. All rights reserved.</p>
+        <a href="#" id="top">back to top</a>
+      </div>
+    </div>
   </footer>
 </body>
 <script>
+  // 타이핑 효과
+  const content = "긍정적이며 성실하고 열정이 많은 저는 신예원 입니다.";
+  const text = document.querySelector(".text");
+  let index = 0;
+
+  function typing() {
+    text.textContent += content[index++];
+    if (index > content.length) {
+      text.textContent = "";
+      index = 0;
+    }
+  }
+
+  setInterval(typing, 400);
 </script>
+
 </html>
